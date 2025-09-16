@@ -1,252 +1,254 @@
 <!DOCTYPE-html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakhan Ekal's Website</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .container {
-            max-width: 800px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakhan Ekal's Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: #4f46e5;
+            border-radius: 9999px;
+        }
+        .container-wrapper {
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
             padding-left: 1rem;
             padding-right: 1rem;
-        }
+        }
         @media (min-width: 768px) {
-            .container {
+            .container-wrapper {
                 padding-left: 1.5rem;
                 padding-right: 1.5rem;
             }
         }
-        .section-title {
-            position: relative;
-            padding-bottom: 0.5rem;
-            margin-bottom: 2rem;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background-color: #4f46e5;
-            border-radius: 9999px;
-        }
-    </style>
+    </style>
 </head>
 <body class="antialiased">
 
-        <header class="bg-white shadow-sm p-4 md:p-6 sticky top-0 z-50">
-        <nav class="container flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-900">Lakhan Ekal</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">About</a>
-                <a href="#research" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Research</a>
-                <a href="#publications" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Publications</a>
-                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Contact</a>
-            </div>
-            <button class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-        </nav>
-    </header>
+    <div class="container-wrapper">
 
-        <main class="container py-16 md:py-24">
-        <div class="flex flex-col md:flex-row items-center text-center md:text-left gap-8 md:gap-16">
-            <div class="flex-shrink-0">
-                <img src="https://placehold.co/200x200/4f46e5/ffffff?text=LE" alt="Profile Picture" class="rounded-full shadow-lg border-4 border-white transition-transform transform hover:scale-105">
-            </div>
-            <div class="flex-1">
-                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">Hello, I'm Lakhan Ekal.</h1>
-                <p class="text-lg md:text-xl text-gray-600 mb-8">An experienced structural and molecular cell biologist eager to lead an independent research programme at the host-pathogen nexus.</p>
-                <div class="flex justify-center md:justify-start space-x-4">
-                    <a href="#research" class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300">View My Work</a>
-                    <a href="#contact" class="bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-gray-300 transition-colors duration-300">Get In Touch</a>
-                </div>
-            </div>
-        </div>
-    </main>
+        <header class="bg-white shadow-sm p-4 md:p-6 sticky top-0 z-50">
+            <nav class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-gray-900">Lakhan Ekal</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">About</a>
+                    <a href="#research" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Research</a>
+                    <a href="#publications" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Publications</a>
+                    <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </nav>
+        </header>
 
-        <section id="about" class="bg-white py-16 md:py-24">
-        <div class="container text-left">
-            <h2 class="text-3xl font-bold text-gray-900 section-title text-center mb-8">About Me</h2>
+        <main class="py-16 md:py-24">
+            <div class="flex flex-col md:flex-row items-center text-center md:text-left gap-8 md:gap-16">
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/200x200/4f46e5/ffffff?text=LE" alt="Profile Picture" class="rounded-full shadow-lg border-4 border-white transition-transform transform hover:scale-105">
+                </div>
+                <div class="flex-1">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">Hello, I'm Lakhan Ekal.</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8">An experienced structural and molecular cell biologist eager to lead an independent research programme at the host-pathogen nexus.</p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#research" class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300">View My Work</a>
+                        <a href="#contact" class="bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-gray-300 transition-colors duration-300">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-            <div class="mb-8">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Profile Summary</h3>
-                <p class="text-lg text-gray-600 leading-relaxed">An early-career researcher with extensive experience in organelle dynamics, structural biology, and molecular cell biology. My integrative approach, combining cryo-EM, biochemistry, and cell biology, has yielded novel mechanistic insights into three key aspects of peroxisomal dynamics—peroxisome fission, inheritance, and protein import. I aim to pivot from my foundation in peroxisome biology to the host-pathogen nexus. This interdisciplinary mobility will enable me to pioneer a new research direction and identify novel therapeutic targets.</p>
-            </div>
+        <section id="about" class="bg-white py-16 md:py-24">
+            <div class="text-left">
+                <h2 class="text-3xl font-bold text-gray-900 section-title text-center mb-8">About Me</h2>
 
-            <div id="about-details" class="hidden">
-                <div class="mb-8">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Previous Education and Research Experience</h3>
-                    <ul class="list-none text-lg text-gray-600 leading-relaxed space-y-4">
-                        <li>
-                            <strong>Postdoctoral Fellow</strong> | August 2019 – December 2024<br>
-                            European Molecular Biology Laboratory (EMBL)
-                            Hamburg, Germany<br>
-                            Supervisor: <strong>Prof. Matthias Wilmanns</strong>
-                        </li>
-                        <li>
-                            <strong>Research Associate</strong> | November 2018 – June 2019<br>
-                            Department of Molecular Biology and Biotechnology (MBB), <strong>The University of Sheffield</strong>, UK<br>
-                            Supervisor: <strong>Dr. Ewald Hettema</strong>
-                        </li>
-                        <li>
-                            <strong>Doctor of Philosophy (PhD)</strong> | 2014 – 2018<br>
-                            Subject: Molecular Cell Biology<br>
-                            Department of Molecular Biology Biotechnology (MBB), <strong>The University of Sheffield</strong>, UK<br>
-                            Supervisor: <strong>Dr. Ewald Hettema</strong>
-                        </li>
-                        <li>
-                            <strong>Bachelor of Science & Master of Science (BS-MS)</strong> | 2009 – 2014<br>
-                            Subject: Biological Sciences<br>
-                            <strong>Indian Institute of Science Education & Research (IISER) Bhopal</strong>, India
-                        </li>
-                    </ul>
-                </div>
+                <div class="mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Profile Summary</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed">An early-career researcher with extensive experience in organelle dynamics, structural biology, and molecular cell biology. My integrative approach, combining cryo-EM, biochemistry, and cell biology, has yielded novel mechanistic insights into three key aspects of peroxisomal dynamics—peroxisome fission, inheritance, and protein import. I aim to pivot from my foundation in peroxisome biology to the host-pathogen nexus. This interdisciplinary mobility will enable me to pioneer a new research direction and identify novel therapeutic targets.</p>
+                </div>
 
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Career Development Goals</h3>
-                    <ul class="list-disc list-inside text-lg text-gray-600 leading-relaxed space-y-2">
-                        <li>Transition from organelle dynamics to host-pathogen interactions and establish a leading research program in the peroxisome-pathogen nexus.</li>
-                        <li>Build collaborative networks across the EU structural biology and virology communities.</li>
-                    </ul>
-                </div>
-            </div>
+                <div id="about-details" class="hidden">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Previous Education and Research Experience</h3>
+                        <ul class="list-none text-lg text-gray-600 leading-relaxed space-y-4">
+                            <li>
+                                <strong>Postdoctoral Fellow</strong> | August 2019 – December 2024<br>
+                                European Molecular Biology Laboratory (EMBL)
+                                Hamburg, Germany<br>
+                                Supervisor: <strong>Prof. Matthias Wilmanns</strong>
+                            </li>
+                            <li>
+                                <strong>Research Associate</strong> | November 2018 – June 2019<br>
+                                Department of Molecular Biology and Biotechnology (MBB), <strong>The University of Sheffield</strong>, UK<br>
+                                Supervisor: <strong>Dr. Ewald Hettema</strong>
+                            </li>
+                            <li>
+                                <strong>Doctor of Philosophy (PhD)</strong> | 2014 – 2018<br>
+                                Subject: Molecular Cell Biology<br>
+                                Department of Molecular Biology Biotechnology (MBB), <strong>The University of Sheffield</strong>, UK<br>
+                                Supervisor: <strong>Dr. Ewald Hettema</strong>
+                            </li>
+                            <li>
+                                <strong>Bachelor of Science & Master of Science (BS-MS)</strong> | 2009 – 2014<br>
+                                Subject: Biological Sciences<br>
+                                <strong>Indian Institute of Science Education & Research (IISER) Bhopal</strong>, India
+                            </li>
+                        </ul>
+                    </div>
 
-            <div class="text-center mt-6">
-                <button id="toggle-about-btn" class="bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-full shadow-lg hover:bg-gray-300 transition-colors duration-300">
-                    Show Full Details
-                </button>
-            </div>
-        </div>
-    </section>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Career Development Goals</h3>
+                        <ul class="list-disc list-inside text-lg text-gray-600 leading-relaxed space-y-2">
+                            <li>Transition from organelle dynamics to host-pathogen interactions and establish a leading research program in the peroxisome-pathogen nexus.</li>
+                            <li>Build collaborative networks across the EU structural biology and virology communities.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <section id="research" class="py-16 md:py-24">
-        <div class="container text-left">
-            <h2 class="text-3xl font-bold text-gray-900 text-center section-title mb-12">My Research</h2>
+                <div class="text-center mt-6">
+                    <button id="toggle-about-btn" class="bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-full shadow-lg hover:bg-gray-300 transition-colors duration-300">
+                        Show Full Details
+                    </button>
+                </div>
+            </div>
+        </section>
 
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Postdoctoral Research on Peroxisomal Protein Import</h3>
-                <p class="text-gray-600 leading-relaxed">At EMBL Hamburg, I investigated the essential role of an enigmatic matrix protein, <strong>Pex8</strong>, in peroxisomal cargo translocation. I determined Pex8's crystal structure (<a href="https://www.rcsb.org/structure/8RQT" target="_blank" class="text-indigo-600 hover:underline">PDB: 8RQT</a>) and solved its cryo-EM structure in complex with the major cycling receptor <strong>Pex5</strong>. These structures revealed that Pex8 binds to Pex5 through two distinct sites, including a novel binding interface. Combined with AlphaFold3 modelling and in vivo import assays, we propose a model where this bimodal binding restricts Pex5's conformational flexibility, correctly positioning its ubiquitination site to initiate receptor recycling. This work (bioRxiv, preprint) elucidates the key transition from cargo release to receptor recycling in peroxisomal translocation. (Ref. 1)</p>
-            </div>
+        <section id="contact" class="bg-white py-16 md:py-24">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-900 section-title mb-8">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">Feel free to reach out to me via email or connect with me on social media.</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="mailto:lakhan.ekal@example.com" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 12h9V8l-9 5.26L3 8v12h9z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lakhan-ekal" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.765 0-.974.784-1.765 1.75-1.765s1.75.791 1.75 1.765c0 .975-.784 1.765-1.75 1.765zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.673 7 3.655v5.58z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/lakhanekal" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.11.819-.26.819-.578 0-.284-.01-1.037-.01-2.03-3.338.724-4.042-1.61-4.042-1.61-.542-1.368-1.325-1.734-1.325-1.734-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.49.998.108-.777.42-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.465-2.381 1.236-3.22-.124-.305-.538-1.529.117-3.179 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.004-.404 1.021.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.656 1.65.242 2.874.118 3.179.77.839 1.233 1.911 1.233 3.22 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.219.694.825.578 4.767-1.587 8.205-6.085 8.205-11.385 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
 
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">PhD Research on Peroxisome Dynamics in Budding Yeast</h3>
-                <p class="text-gray-600 leading-relaxed">At the University of Sheffield, I focused on molecular mechanisms governing fission and segregation in <strong>Saccharomyces cerevisiae</strong>. First, I discovered that the membrane protein <strong>Pex27</strong> is concentrated at constricted sites on elongated peroxisomes and further recruits dynamin-related protein <strong>Vps1</strong> to these sites to induce fission, thus acting as an essential receptor for Vps1. This study highlighted how process-specific receptors achieve spatial control of Dynamin-related proteins on different membranes. (Ref. 3) Subsequently, I studied the regulation of myosin motor (<strong>Myo2</strong>) and actin cytoskeleton-based organelle transport. Using high-content genetic screening, I identified spindle position checkpoint (SPOC) kinase <strong>Kin4</strong> as a key regulator of peroxisome and vacuole transport. I demonstrated that Kin4 prevents premature <strong>Cla4</strong> and <strong>Dma1</strong>-dependent degradation of <strong>Vac17</strong> (vacuole-specific Myo2 receptor) in mother cells. These findings revealed a novel function for Kin4 beyond cell cycle control, showing how opposing kinase activities create distinct cellular zones to regulate organelle segregation during asymmetric cell division. (Ref. 2, 4)</p>
-            </div>
+    <section id="research" class="py-16 md:py-24" style="padding-top: 100px;">
+        <div class="container-wrapper text-left">
+            <h2 class="text-3xl font-bold text-gray-900 text-center section-title mb-12">My Research</h2>
 
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Master's Research on Bacterial Stress Response</h3>
-                <p class="text-gray-600 leading-relaxed">My research journey began with investigating the mycobacterial Rel enzyme, critical for (p)ppGpp metabolism. I identified and characterised an Intrinsically Disordered Region (IDR) of conserved length in Rel that drives the C-terminal ACT domain movement to control the switch between the enzyme's (p)ppGpp synthesis and hydrolysis activities. I found conserved motifs within this IDR, later shown to be nucleotide-binding sites, that govern this molecular switch. This work provided key mechanistic insights into how pathogenic bacteria adapt to environmental stress, laying the foundation for my interest in fundamental cellular regulation. (Ref. 6)</p>
-            </div>
-        </div>
-    </section>
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Postdoctoral Research on Peroxisomal Protein Import</h3>
+                <p class="text-gray-600 leading-relaxed">At EMBL Hamburg, I investigated the essential role of an enigmatic matrix protein, <strong>Pex8</strong>, in peroxisomal cargo translocation. I determined Pex8's crystal structure (<a href="https://www.rcsb.org/structure/8RQT" target="_blank" class="text-indigo-600 hover:underline">PDB: 8RQT</a>) and solved its cryo-EM structure in complex with the major cycling receptor <strong>Pex5</strong>. These structures revealed that Pex8 binds to Pex5 through two distinct sites, including a novel binding interface. Combined with AlphaFold3 modelling and in vivo import assays, we propose a model where this bimodal binding restricts Pex5's conformational flexibility, correctly positioning its ubiquitination site to initiate receptor recycling. This work (bioRxiv, preprint) elucidates the key transition from cargo release to receptor recycling in peroxisomal translocation. (Ref. 1)</p>
+            </div>
 
-        <section id="publications" class="bg-white py-16 md:py-24">
-        <div class="container text-left">
-            <h2 class="text-3xl font-bold text-gray-900 text-center section-title mb-12">Publications</h2>
-            <ol class="list-decimal list-outside text-gray-600 leading-relaxed space-y-8 pl-5 md:pl-0">
-                <li>
-                    <p class="mb-2"><strong>Ekal L</strong>, Wendscheck D, David Y, Chojnowski G, Jeffries CM, Mullapudi E, Schuldiner M, Warscheid B, Zalckvar E, Wilmanns M, <em>Structure of Pex8 in complex with peroxisomal receptor Pex5 reveals its essential role in peroxisomal cargo translocation</em>, <strong>2025</strong>, bioRxiv <a href="https://doi.org/10.1101/2025.08.30.673231" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1101/2025.08.30.673231</a></p>
-                    <p class="text-sm text-gray-500 italic">This manuscript reveals the first structure of the essential Pex8-Pex5 receptor complex. Combining in vivo assays and computational analysis, we provide insights into the mechanisms of cargo release and receptor recycling, which are critical for peroxisomal matrix protein import.</p>
-                </li>
-                <li>
-                    <p class="mb-2"><strong>Ekal L#</strong>, Alqahtani AMS, Ayscough KR, Hettema EH#, <em>Spatiotemporal regulation of organelle transport by spindle position checkpoint kinase Kin4</em>. <strong>2024</strong>, <strong>J Cell Sci</strong>, <strong># Co-corresponding author, Selected as a Research Highlight</strong>; 137 (21): e137_e2102) <a href="https://doi.org/10.1242/jcs.261948" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1242/jcs.261948</a></p>
-                    <p class="text-sm text-gray-500 italic">This paper deciphers the antagonistic interplay between spindle position checkpoint kinase Kin4 and p21 activated kinase Cla4, establishing a novel mechanism that regulates the distribution of peroxisomes and vacuoles. These findings highlight conserved principles for organelle segregation during asymmetric cell growth and division.</p>
-                </li>
-                <li>
-                    <p class="mb-2"><strong>Ekal L</strong>, Alqahtani AMS, Hettema EH, <em>The dynamin-related protein Vps1 and the peroxisomal membrane protein Pex27 function together during peroxisome fission</em>. <strong>2023</strong>, <strong>J Cell Sci</strong>, <strong>Selected as a Research Highlight</strong>; 136 (6): e136_e0601 <a href="https://doi.org/10.1242/jcs.246348" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1242/jcs.246348</a></p>
-                    <p class="text-sm text-gray-500 italic">This work reveals Pex27 (a peroxisomal membrane protein) as an essential receptor for the dynamin-related protein Vps1 during peroxisome fission. We show that Pex27 concentrates at constricted sites on elongated peroxisomes to recruit Vps1 to induce fission, highlighting how process-specific receptors achieve spatial control of dynamin-related proteins.</p>
-                </li>
-                <li>
-                    <p class="mb-2"><strong>Ekal L</strong>, Alqahtani AMS, Zalckvar E, Schuldiner M, Hettema EH, Ayscough KR, <em>Spindle Position Checkpoint Kinase Kin4 Regulates Organelle Transport in Saccharomyces cerevisiae</em>. <strong>2023</strong>, <strong>Biomolecules</strong>, <a href="https://doi.org/10.3390/biom13071098" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.3390/biom13071098</a></p>
-                    <p class="text-sm text-gray-500 italic">We report a novel function for the kinase Kin4 in regulating peroxisome and vacuole transport, moving beyond its known role in cell cycle regulation. This study also uncovers Frk1 as a functional paralogue to Kin4, revealing its involvement in organelle transport and suggesting a role as a putative checkpoint kinase.</p>
-                </li>
-                <li>
-                    <p class="mb-2"><strong>Ekal L</strong>, Hettema EH, <em>Targeted Modifications of the Yeast Genome to Study Peroxisomes</em>. <strong>2023</strong>, <strong>Meth Mol Biol</strong>, <a href="https://doi.org/10.1007/978-1-0716-3048-8_16" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1007/978-1-0716-3048-8_16</a></p>
-                    <p class="text-sm text-gray-500 italic">This book chapter provides detailed protocols for targeted genome modifications in yeast, offering a practical guide for researchers studying peroxisomes. It serves as a valuable resource for manipulating the yeast genome to investigate peroxisome biology.</p>
-                </li>
-                <li>
-                    <p class="mb-2"><strong>Ekal L</strong>, Ganesh B, Joshi H, Lama D, Jain V, <em>Evidence of a conserved intrinsically disordered region in the C-terminus of the stringent response protein Rel from mycobacteria</em>. <strong>2014</strong>, <strong>FEBS letters</strong>, <a href="https://doi.org/10.1016/-j.febslet.2014.03.048" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1016/-j.febslet.2014.03.048</a></p>
-                    <p class="text-sm text-gray-500 italic">We report the discovery of a conserved Intrinsically Disordered Region (IDR) in the Rel enzyme that serves as a molecular switch. This IDR controls the movement of the C-terminal ACT domain to regulate the enzyme's opposing activities of (p)ppGpp synthesis and hydrolysis. The conserved motifs within this IDR are nucleotide-binding sites that govern this precise regulatory mechanism.</p>
-                </li>
-                <li>
-                    <p class="mb-2">Nayef N, <strong>Ekal L</strong>, Hettema EH, Ayscough KR, <em>Insights into the Regulation of the Mitochondrial Inheritance and Trafficking Adaptor Protein Mmr1 in Saccharomyces cerevisiae</em>. <strong>2024</strong>, Kinases and Phosphatases <a href="https://doi.org/10.3390/kinases-phosphatases2020012" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.3390/kinases-phosphatases2020012</a></p>
-                </li>
-                <li>
-                    <p class="mb-2">Bürgi J, <strong>Ekal L</strong>, Wilmanns M, <em>Versatile allosteric properties in Pex5-like tetratricopeptide repeat proteins to induce diverse downstream function</em>. <strong>2021</strong>, <strong>Traffic</strong>, <a href="https://doi.org/10.1111/tra.12785" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1111/tra.12785</a></p>
-                </li>
-                <li>
-                    <p class="mb-2">Gujrati M, Mittal R, <strong>Ekal L</strong>, Mishra RK, <em>SUMOylation of Periplakin is critical for efficient re-organisation of Keratin filament network</em>. <strong>2019</strong>, <strong>Mol Biol Cell</strong>, <a href="https://doi.org/10.1091/mbc.E18-04-0244" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1091/mbc.E18-04-0244</a></p>
-                </li>
-                <li>
-                    <p class="mb-2">Al Saryi NA, Al-hejjaj MY, van Roermund CWT, Hulmes G, <strong>Ekal L</strong>, Payton C, Wanders RJA, Hettema EH. <em>Two NAD-linked redox shuttles maintain the peroxisomal redox balance in Saccharomyces cerevisiae</em>. <strong>2017</strong>, <strong>Sci Rep</strong>, <a href="https://doi.org/10.1038/s41598-017-11942-2" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1038/s41598-017-11942-2</a></p>
-                </li>
-                <li>
-                    <p class="mb-2">Motley AM, Galvin PC, <strong>Ekal L</strong>, Nuttall JM, and Hettema EH, <em>Re-evaluation of the role of Pex1 and dynamin-related proteins in peroxisome membrane biogenesis</em>. <strong>2015</strong>, <strong>J Cell Biol</strong>, <a href="https://doi.org/10.1083/jcb.201412066" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1083/jcb.201412066</a></p>
-                </li>
-            </ol>
-        </div>
-    </section>
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">PhD Research on Peroxisome Dynamics in Budding Yeast</h3>
+                <p class="text-gray-600 leading-relaxed">At the University of Sheffield, I focused on molecular mechanisms governing fission and segregation in <strong>Saccharomyces cerevisiae</strong>. First, I discovered that the membrane protein <strong>Pex27</strong> is concentrated at constricted sites on elongated peroxisomes and further recruits dynamin-related protein <strong>Vps1</strong> to these sites to induce fission, thus acting as an essential receptor for Vps1. This study highlighted how process-specific receptors achieve spatial control of Dynamin-related proteins on different membranes. (Ref. 3) Subsequently, I studied the regulation of myosin motor (<strong>Myo2</strong>) and actin cytoskeleton-based organelle transport. Using high-content genetic screening, I identified spindle position checkpoint (SPOC) kinase <strong>Kin4</strong> as a key regulator of peroxisome and vacuole transport. I demonstrated that Kin4 prevents premature <strong>Cla4</strong> and <strong>Dma1</strong>-dependent degradation of <strong>Vac17</strong> (vacuole-specific Myo2 receptor) in mother cells. These findings revealed a novel function for Kin4 beyond cell cycle control, showing how opposing kinase activities create distinct cellular zones to regulate organelle segregation during asymmetric cell division. (Ref. 2, 4)</p>
+            </div>
 
-        <section id="contact" class="bg-white py-16 md:py-24">
-        <div class="container text-center">
-            <h2 class="text-3xl font-bold text-gray-900 section-title mb-8">Get In Touch</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">Feel free to reach out to me via email or connect with me on social media.</p>
-            <div class="flex justify-center space-x-6">
-                                <a href="mailto:lakhan.ekal@example.com" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 12h9V8l-9 5.26L3 8v12h9z" />
-                    </svg>
-                </a>
-                                <a href="https://www.linkedin.com/in/lakhan-ekal" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.765 0-.974.784-1.765 1.75-1.765s1.75.791 1.75 1.765c0 .975-.784 1.765-1.75 1.765zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.673 7 3.655v5.58z" />
-                    </svg>
-                </a>
-                                <a href="https://github.com/lakhanekal" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.11.819-.26.819-.578 0-.284-.01-1.037-.01-2.03-3.338.724-4.042-1.61-4.042-1.61-.542-1.368-1.325-1.734-1.325-1.734-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.49.998.108-.777.42-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.465-2.381 1.236-3.22-.124-.305-.538-1.529.117-3.179 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.004-.404 1.021.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.656 1.65.242 2.874.118 3.179.77.839 1.233 1.911 1.233 3.22 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.219.694.825.578 4.767-1.587 8.205-6.085 8.205-11.385 0-6.627-5.373-12-12-12z" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Master's Research on Bacterial Stress Response</h3>
+                <p class="text-gray-600 leading-relaxed">My research journey began with investigating the mycobacterial Rel enzyme, critical for (p)ppGpp metabolism. I identified and characterised an Intrinsically Disordered Region (IDR) of conserved length in Rel that drives the C-terminal ACT domain movement to control the switch between the enzyme's (p)ppGpp synthesis and hydrolysis activities. I found conserved motifs within this IDR, later shown to be nucleotide-binding sites, that govern this molecular switch. This work provided key mechanistic insights into how pathogenic bacteria adapt to environmental stress, laying the foundation for my interest in fundamental cellular regulation. (Ref. 6)</p>
+            </div>
+        </div>
+    </section>
 
-        <footer class="bg-gray-800 text-white p-6 md:p-8 text-center">
-        <div class="container">
-            <p>&copy; 2025 Lakhan Ekal. All rights reserved.</p>
-        </div>
-    </footer>
+    <section id="publications" class="bg-white py-16 md:py-24" style="padding-top: 100px;">
+        <div class="container-wrapper text-left">
+            <h2 class="text-3xl font-bold text-gray-900 text-center section-title mb-12">Publications</h2>
+            <ol class="list-decimal list-outside text-gray-600 leading-relaxed space-y-8 pl-5 md:pl-0">
+                <li>
+                    <p class="mb-2"><strong>Ekal L</strong>, Wendscheck D, David Y, Chojnowski G, Jeffries CM, Mullapudi E, Schuldiner M, Warscheid B, Zalckvar E, Wilmanns M, <em>Structure of Pex8 in complex with peroxisomal receptor Pex5 reveals its essential role in peroxisomal cargo translocation</em>, <strong>2025</strong>, bioRxiv <a href="https://doi.org/10.1101/2025.08.30.673231" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1101/2025.08.30.673231</a></p>
+                    <p class="text-sm text-gray-500 italic">This manuscript reveals the first structure of the essential Pex8-Pex5 receptor complex. Combining in vivo assays and computational analysis, we provide insights into the mechanisms of cargo release and receptor recycling, which are critical for peroxisomal matrix protein import.</p>
+                </li>
+                <li>
+                    <p class="mb-2"><strong>Ekal L#</strong>, Alqahtani AMS, Ayscough KR, Hettema EH#, <em>Spatiotemporal regulation of organelle transport by spindle position checkpoint kinase Kin4</em>. <strong>2024</strong>, <strong>J Cell Sci</strong>, <strong># Co-corresponding author, Selected as a Research Highlight</strong>; 137 (21): e137_e2102) <a href="https://doi.org/10.1242/jcs.261948" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1242/jcs.261948</a></p>
+                    <p class="text-sm text-gray-500 italic">This paper deciphers the antagonistic interplay between spindle position checkpoint kinase Kin4 and p21 activated kinase Cla4, establishing a novel mechanism that regulates the distribution of peroxisomes and vacuoles. These findings highlight conserved principles for organelle segregation during asymmetric cell growth and division.</p>
+                </li>
+                <li>
+                    <p class="mb-2"><strong>Ekal L</strong>, Alqahtani AMS, Hettema EH, <em>The dynamin-related protein Vps1 and the peroxisomal membrane protein Pex27 function together during peroxisome fission</em>. <strong>2023</strong>, <strong>J Cell Sci</strong>, <strong>Selected as a Research Highlight</strong>; 136 (6): e136_e0601 <a href="https://doi.org/10.1242/jcs.246348" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1242/jcs.246348</a></p>
+                    <p class="text-sm text-gray-500 italic">This work reveals Pex27 (a peroxisomal membrane protein) as an essential receptor for the dynamin-related protein Vps1 during peroxisome fission. We show that Pex27 concentrates at constricted sites on elongated peroxisomes to recruit Vps1 to induce fission, highlighting how process-specific receptors achieve spatial control of dynamin-related proteins.</p>
+                </li>
+                <li>
+                    <p class="mb-2"><strong>Ekal L</strong>, Alqahtani AMS, Zalckvar E, Schuldiner M, Hettema EH, Ayscough KR, <em>Spindle Position Checkpoint Kinase Kin4 Regulates Organelle Transport in Saccharomyces cerevisiae</em>. <strong>2023</strong>, <strong>Biomolecules</strong>, <a href="https://doi.org/10.3390/biom13071098" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.3390/biom13071098</a></p>
+                    <p class="text-sm text-gray-500 italic">We report a novel function for the kinase Kin4 in regulating peroxisome and vacuole transport, moving beyond its known role in cell cycle regulation. This study also uncovers Frk1 as a functional paralogue to Kin4, revealing its involvement in organelle transport and suggesting a role as a putative checkpoint kinase.</p>
+                </li>
+                <li>
+                    <p class="mb-2"><strong>Ekal L</strong>, Hettema EH, <em>Targeted Modifications of the Yeast Genome to Study Peroxisomes</em>. <strong>2023</strong>, <strong>Meth Mol Biol</strong>, <a href="https://doi.org/10.1007/978-1-0716-3048-8_16" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1007/978-1-0716-3048-8_16</a></p>
+                    <p class="text-sm text-gray-500 italic">This book chapter provides detailed protocols for targeted genome modifications in yeast, offering a practical guide for researchers studying peroxisomes. It serves as a valuable resource for manipulating the yeast genome to investigate peroxisome biology.</p>
+                </li>
+                <li>
+                    <p class="mb-2"><strong>Ekal L</strong>, Ganesh B, Joshi H, Lama D, Jain V, <em>Evidence of a conserved intrinsically disordered region in the C-terminus of the stringent response protein Rel from mycobacteria</em>. <strong>2014</strong>, <strong>FEBS letters</strong>, <a href="https://doi.org/10.1016/-j.febslet.2014.03.048" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1016/-j.febslet.2014.03.048</a></p>
+                    <p class="text-sm text-gray-500 italic">We report the discovery of a conserved Intrinsically Disordered Region (IDR) in the Rel enzyme that serves as a molecular switch. This IDR controls the movement of the C-terminal ACT domain to regulate the enzyme's opposing activities of (p)ppGpp synthesis and hydrolysis. The conserved motifs within this IDR are nucleotide-binding sites that govern this precise regulatory mechanism.</p>
+                </li>
+                <li>
+                    <p class="mb-2">Nayef N, <strong>Ekal L</strong>, Hettema EH, Ayscough KR, <em>Insights into the Regulation of the Mitochondrial Inheritance and Trafficking Adaptor Protein Mmr1 in Saccharomyces cerevisiae</em>. <strong>2024</strong>, Kinases and Phosphatases <a href="https://doi.org/10.3390/kinases-phosphatases2020012" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.3390/kinases-phosphatases2020012</a></p>
+                </li>
+                <li>
+                    <p class="mb-2">Bürgi J, <strong>Ekal L</strong>, Wilmanns M, <em>Versatile allosteric properties in Pex5-like tetratricopeptide repeat proteins to induce diverse downstream function</em>. <strong>2021</strong>, <strong>Traffic</strong>, <a href="https://doi.org/10.1111/tra.12785" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1111/tra.12785</a></p>
+                </li>
+                <li>
+                    <p class="mb-2">Gujrati M, Mittal R, <strong>Ekal L</strong>, Mishra RK, <em>SUMOylation of Periplakin is critical for efficient re-organisation of Keratin filament network</em>. <strong>2019</strong>, <strong>Mol Biol Cell</strong>, <a href="https://doi.org/10.1091/mbc.E18-04-0244" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1091/mbc.E18-04-0244</a></p>
+                </li>
+                <li>
+                    <p class="mb-2">Al Saryi NA, Al-hejjaj MY, van Roermund CWT, Hulmes G, <strong>Ekal L</strong>, Payton C, Wanders RJA, Hettema EH. <em>Two NAD-linked redox shuttles maintain the peroxisomal redox balance in Saccharomyces cerevisiae</em>. <strong>2017</strong>, <strong>Sci Rep</strong>, <a href="https://doi.org/10.1038/s41598-017-11942-2" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1038/s41598-017-11942-2</a></p>
+                </li>
+                <li>
+                    <p class="mb-2">Motley AM, Galvin PC, <strong>Ekal L</strong>, Nuttall JM, and Hettema EH, <em>Re-evaluation of the role of Pex1 and dynamin-related proteins in peroxisome membrane biogenesis</em>. <strong>2015</strong>, <strong>J Cell Biol</strong>, <a href="https://doi.org/10.1083/jcb.201412066" target="_blank" class="text-indigo-600 hover:underline">DOI: 10.1083/jcb.201412066</a></p>
+                </li>
+            </ol>
+        </div>
+    </section>
 
-    <script>
-        const toggleBtn = document.getElementById('toggle-about-btn');
-        const aboutDetails = document.getElementById('about-details');
+    <footer class="bg-gray-800 text-white p-6 md:p-8 text-center">
+        <div class="container-wrapper">
+            <p>&copy; 2025 Lakhan Ekal. All rights reserved.</p>
+        </div>
+    </footer>
 
-        toggleBtn.addEventListener('click', () => {
-            if (aboutDetails.classList.contains('hidden')) {
-                aboutDetails.classList.remove('hidden');
-                toggleBtn.textContent = 'Hide Details';
-            } else {
-                aboutDetails.classList.add('hidden');
-                toggleBtn.textContent = 'Show Full Details';
-            }
-        });
-    </script>
+    <script>
+        const toggleBtn = document.getElementById('toggle-about-btn');
+        const aboutDetails = document.getElementById('about-details');
+
+        toggleBtn.addEventListener('click', () => {
+            if (aboutDetails.classList.contains('hidden')) {
+                aboutDetails.classList.remove('hidden');
+                toggleBtn.textContent = 'Hide Details';
+            } else {
+                aboutDetails.classList.add('hidden');
+                toggleBtn.textContent = 'Show Full Details';
+            }
+        });
+    </script>
 
 </body>
 </html>
